@@ -1,0 +1,230 @@
+:root {
+  --color-brand: #fd9222;
+  --color-primary: #111111;
+  --color-primary-light: #fff;
+  --color-background: #1e1823;
+  --color-background-light: #fafafa;
+  --color-background-button: #fcf1e0;
+  --color-primary-light-accent: #ffffffb2;
+  --color-border-ligth: #ffffff80;
+}
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-primary);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-background-light);
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button-primary {
+  background-color: var(--color-brand);
+  color: var(--color-primary-light);
+  border: none;
+  cursor: pointer;
+  padding: 14px 40px;
+  border-radius: 100px;
+  font-weight: 600;
+  line-height: 1.21;
+}
+
+.button-primary:hover {
+  background-color: var(--color-background-button);
+  color: var(--color-brand);
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.sections-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-accent {
+  color: var(--color-brand);
+}
+
+/* Header */
+
+.logo {
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-align: left;
+
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  font-style: italic;
+}
+
+.nav-link {
+  color: var(--color-primary);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.nav-link:hover {
+  color: var(--color-brand);
+}
+
+/* Hero */
+
+.hero-section {
+  padding: 380px 0 40px;
+  background-color: var(--color-background);
+  /* todo background image */
+}
+
+.hero-title {
+  max-width: 484px;
+  color: var(--color-primary-light);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.button-hero {
+  background-color: var(--color-background);
+  color: var(--color-primary-light);
+  border: 1px solid currentColor;
+  border-radius: 100px;
+  padding: 14px 40px;
+  font-weight: 600;
+  line-height: 1.21;
+}
+
+.button-hero:hover {
+  color: var(--color-brand);
+}
+
+.hero-scroll-down {
+  color: var(--color-primary-light);
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+
+.hero-scroll-down:hover {
+  color: var(--color-brand);
+}
+
+/* Our Benefits Section*/
+.benefits-section {
+  padding: 50px 0;
+  background-color: var(--color-background);
+}
+
+.benefits-icon {
+  height: 62px;
+  width: 62px;
+  margin-bottom: 22px;
+  border: 1px solid var(--color-border-ligth);
+  border-radius: 50%;
+}
+.benefits-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.21;
+  color: var(--color-primary-light);
+  margin-bottom: 18px;
+}
+
+.benefits-text {
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--color-primary-light-accent);
+}
+
+/* Ingredients Section */
+
+.ingredients-text {
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.ingredients-title {
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* How it's made section */
+
+.made-section-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: left;
+}
