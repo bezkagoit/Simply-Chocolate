@@ -15,35 +15,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <a class="logo" href="./index.html">
-            <span class="logo-accent">Simply</span> chocolate
-            <img
-              src="./images/icons/chocolate.svg"
-              alt="Simply Chocolate logo"
-              width="24"
-            />
-          </a>
-          <ul>
-            <li><a class="nav-link" href="#"> Home </a></li>
-            <li><a class="nav-link" href="#"> How it’s made? </a></li>
-            <li><a class="nav-link" href="#"> Our products </a></li>
-            <li><a class="nav-link" href="#"> Top sellers </a></li>
-            <li><a class="nav-link" href="#"> Chocolate is loved </a></li>
-          </ul>
-          <a href="#"
-            ><img
-              src="./images/icons/instagram.svg"
-              alt="instagram"
-              width="24"
-            />
-          </a>
-          <a href="#">
-            <img src="./images/icons/twitter.svg" alt="Twitter" width="24" />
-          </a>
-        </nav>
+        <div class="header-inner">
+          <nav class="header-nav">
+            <a class="logo" href="./index.html">
+              <span class="logo-accent">Simply</span> chocolate
+              <img
+                src="./images/icons/chocolate.svg"
+                alt="Simply Chocolate logo"
+                width="24"
+              />
+            </a>
+            <ul class="nav-list">
+              <li><a class="nav-link" href="#"> Home </a></li>
+              <li><a class="nav-link" href="#"> How it’s made? </a></li>
+              <li><a class="nav-link" href="#"> Our products </a></li>
+              <li><a class="nav-link" href="#"> Top sellers </a></li>
+              <li><a class="nav-link" href="#"> Chocolate is loved </a></li>
+            </ul>
+          </nav>
+          <div class="header-socials">
+            <a href="#" target="_blank"
+              ><img
+                src="./images/icons/instagram.svg"
+                alt="instagram"
+                width="24"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img src="./images/icons/twitter.svg" alt="Twitter" width="24" />
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -51,20 +55,25 @@
       <!-- Hero section -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <button class="button-primary" type="button">Buy now</button>
-          <a class="button-hero" href="#">How it’s made</a>
-          <a class="hero-scroll-down" href="#"
-            >Scroll down
-            <img
-              src="./images/icons/scroll-down.svg"
-              alt="Scroll down"
-              width="24"
-            />
-          </a>
+          <div class="hero-inner">
+            <h1 class="hero-title">
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
+            </h1>
+
+            <div class="hero-actions">
+              <button class="button-primary" type="button">Buy now</button>
+              <a class="button-hero" href="#">How it’s made</a>
+              <a class="hero-scroll-down" href="#"
+                >Scroll down
+                <img
+                  src="./images/icons/scroll-down.svg"
+                  alt="Scroll down"
+                  width="24"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -72,8 +81,8 @@
       <section class="benefits-section">
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
-          <ul>
-            <li>
+          <ul class="benefits-list">
+            <li class="benefits-item">
               <img
                 class="benefits-icon"
                 src="./images/icons/chocolate_bar.svg"
@@ -87,7 +96,7 @@
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <img
                 class="benefits-icon"
                 src="./images/icons/dollar.svg"
@@ -102,7 +111,7 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <img
                 class="benefits-icon"
                 src="./images/icons/spoon.svg"
@@ -123,7 +132,7 @@
       <!-- Ingredients section -->
       <section class="section">
         <div class="container">
-          <h2 class="sections-title">
+          <h2 class="ingredients-title">
             It all adds up to one exceptional
             <span class="title-accent">taste</span> sensation
           </h2>
@@ -133,83 +142,99 @@
             ingredients to the careful crafting of each individual piece, every
             step of our process adds up to one exceptional taste sensation.
           </p>
-          <ul>
-            <li>
-              <img
-                src="./images/ingredients/milk-chocolate.png"
-                alt="Milk chocolate"
-                width="206"
-              />
-              <h3 class="ingredients-title">Milk chocolate</h3>
+          <ul class="ingredients-list">
+            <li class="ingredients-item">
+              <div class="ingredient">
+                <img
+                  src="./images/ingredients/milk-chocolate.png"
+                  alt="Milk chocolate"
+                  width="206"
+                />
+                <h3 class="ingredients-subtitle">Milk chocolate</h3>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/ingredients/bottle-milk.png"
-                alt="Bottle milk"
-                width="206"
-              />
-              <h3 class="ingredients-title">Milk</h3>
+            <li class="ingredients-item">
+              <div class="ingredient">
+                <img
+                  src="./images/ingredients/bottle-milk.png"
+                  alt="Bottle milk"
+                  width="206"
+                />
+                <h3 class="ingredients-subtitle">Milk</h3>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/ingredients/nuts.png
+            <li class="ingredients-item">
+              <div class="ingredient">
+                <img
+                  src="./images/ingredients/nuts.png
               "
-                alt="Nuts"
-                width="206"
-              />
-              <h3 class="ingredients-title">Nuts</h3>
+                  alt="Nuts"
+                  width="206"
+                />
+                <h3 class="ingredients-subtitle">Nuts</h3>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/ingredients/chocolate-drops.png"
-                alt="Chocolate drops"
-                width="206"
-              />
-              <h3 class="ingredients-title">Semi-sweet chocolate</h3>
+            <li class="ingredients-item">
+              <div class="ingredient">
+                <img
+                  src="./images/ingredients/chocolate-drops.png"
+                  alt="Chocolate drops"
+                  width="206"
+                />
+                <h3 class="ingredients-subtitle">Semi-sweet chocolate</h3>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- How it's made section   -->
+      <!-- Video section   -->
       <section class="section">
         <div class="container">
           <h2 class="sections-title">
             How it´s <span class="title-accent">made?</span>
           </h2>
-          <!-- placeholder for video -->
-          <img
-            src="./images/video-bg.jpeg"
-            alt="Video background"
-            width="600"
-          />
-          <button type="button">
-            <img src="./images/icons/play.svg" alt="Play" />
-          </button>
-          <p class="made-section-text">
-            Try our chocolates today and discover the perfect balance of flavor
-          </p>
-          <ul>
-            <li class="made-section-item">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-            <li class="made-section-item">
-              At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li class="made-section-item">
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </li>
-            <li class="made-section-item">
-              Heat the mixture over low heat, letting it barely boil.
-            </li>
-            <li class="made-section-item">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </li>
-          </ul>
+          <div class="video-inner">
+            <div class="video-media">
+              <!-- placeholder for video -->
+              <img
+                class="video-background"
+                src="./images/video-bg.jpeg"
+                alt="Video background"
+                width="600"
+              />
+              <button class="video-btn" type="button">
+                <img src="./images/icons/play.svg" alt="Play" />
+              </button>
+            </div>
+            <div class="video-content">
+              <p class="video-text">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </p>
+              <ul>
+                <li class="made-section-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="made-section-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="made-section-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="made-section-item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="made-section-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

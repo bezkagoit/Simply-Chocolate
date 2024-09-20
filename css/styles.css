@@ -44,6 +44,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 button {
@@ -96,6 +97,7 @@ button {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .title-accent {
@@ -104,14 +106,20 @@ button {
 
 /* Header */
 
+.header {
+  padding-bottom: 8px;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   color: var(--color-primary);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
   text-align: left;
-
+  gap: 4px;
   text-transform: uppercase;
 }
 
@@ -120,6 +128,8 @@ button {
 }
 
 .nav-link {
+  display: inline-block;
+  padding: 24px 0;
   color: var(--color-primary);
   font-weight: 500;
   line-height: 1.14;
@@ -131,12 +141,39 @@ button {
   color: var(--color-brand);
 }
 
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;
+}
+.header-socials {
+  display: flex;
+  gap: 18px;
+}
+.nav-list {
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: center;
+}
 /* Hero */
 
 .hero-section {
-  padding: 380px 0 40px;
+  padding-bottom: 72px;
+}
+
+.hero-inner {
+  padding: 380px 40px 40px;
   background-color: var(--color-background);
   /* todo background image */
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -148,6 +185,12 @@ button {
   letter-spacing: -0.03em;
   text-align: left;
   margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .button-hero {
@@ -165,6 +208,10 @@ button {
 }
 
 .hero-scroll-down {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
   color: var(--color-primary-light);
   font-weight: 500;
   line-height: 1.28;
@@ -179,6 +226,16 @@ button {
 .benefits-section {
   padding: 50px 0;
   background-color: var(--color-background);
+}
+
+.benefits-list {
+  display: flex;
+  gap: 70px;
+}
+
+.benefits-item:not(:last-child) {
+  padding-right: 18px;
+  border-right: 1px solid var(--color-border-ligth);
 }
 
 .benefits-icon {
@@ -206,13 +263,40 @@ button {
 
 /* Ingredients Section */
 
+.ingredients-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
 .ingredients-text {
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.ingredients-title {
+.ingredients-list {
+  display: flex;
+  gap: 19px;
+}
+
+.ingredients-item {
+  flex-basis: calc((100% - 57px) / 4);
+}
+
+.ingredient {
+  border: 1px solid var(--color-brand);
+  border-radius: 15px;
+  padding: 28px;
+}
+
+.ingredients-subtitle {
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
   letter-spacing: -0.02em;
@@ -220,9 +304,31 @@ button {
   text-transform: uppercase;
 }
 
-/* How it's made section */
+/* Video section */
 
-.made-section-text {
+.video-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.video-media {
+  flex-basis: calc((100% - 20px) / 2);
+}
+.video-background {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+}
+.video-btn {
+  /* TODO video btn center*/
+  display: none;
+}
+.video-content {
+  padding: 32px;
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.video-text {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
