@@ -21,11 +21,9 @@
           <nav class="header-nav">
             <a class="logo" href="./index.html">
               <span class="logo-accent">Simply</span> chocolate
-              <img
-                src="./images/icons/chocolate.svg"
-                alt="Simply Chocolate logo"
-                width="24"
-              />
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-chocolate"></use>
+              </svg>
             </a>
             <ul class="nav-list">
               <li><a class="nav-link" href="#"> Home </a></li>
@@ -36,15 +34,15 @@
             </ul>
           </nav>
           <div class="header-socials">
-            <a href="#" target="_blank"
-              ><img
-                src="./images/icons/instagram.svg"
-                alt="instagram"
-                width="24"
-              />
+            <a class="header-social-link" href="#" target="_blank">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
-            <a href="#" target="_blank">
-              <img src="./images/icons/twitter.svg" alt="Twitter" width="24" />
+            <a class="header-social-link" href="#" target="_blank">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -64,13 +62,13 @@
             <div class="hero-actions">
               <button class="button-primary" type="button">Buy now</button>
               <a class="button-hero" href="#">How it’s made</a>
-              <a class="hero-scroll-down" href="#"
-                >Scroll down
-                <img
-                  src="./images/icons/scroll-down.svg"
-                  alt="Scroll down"
-                  width="24"
-                />
+              <a class="hero-arrow" href="#benefits-section"
+                >scroll down
+                <span class="hero-arrow-icon">
+                  <svg width="22" height="22">
+                    <use href="./images/icons.svg#icon-scroll-down"></use>
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
@@ -78,16 +76,17 @@
       </section>
 
       <!-- Our benefits section-->
-      <section class="benefits-section">
+      <section id="benefits-section" class="benefits-section">
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
-              <img
-                class="benefits-icon"
-                src="./images/icons/chocolate_bar.svg"
-                alt="Chocolate bar"
-              />
+              <div class="benefits-icon">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate_bar"></use>
+                </svg>
+              </div>
+
               <h3 class="benefits-title">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -97,11 +96,11 @@
               </p>
             </li>
             <li class="benefits-item">
-              <img
-                class="benefits-icon"
-                src="./images/icons/dollar.svg"
-                alt="Coin"
-              />
+              <div class="benefits-icon">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-dollar"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -112,11 +111,11 @@
               </p>
             </li>
             <li class="benefits-item">
-              <img
-                class="benefits-icon"
-                src="./images/icons/spoon.svg"
-                alt="Spoon"
-              />
+              <div class="benefits-icon">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -144,44 +143,116 @@
           </p>
           <ul class="ingredients-list">
             <li class="ingredients-item">
-              <div class="ingredient">
-                <img
-                  src="./images/ingredients/milk-chocolate.png"
-                  alt="Milk chocolate"
-                  width="206"
-                />
-                <h3 class="ingredients-subtitle">Milk chocolate</h3>
+              <div class="ingredients-card">
+                <div class="ingredient">
+                  <img
+                    class="ingredient-img"
+                    src="./images/ingredients/milk-chocolate.png"
+                    alt="Milk chocolate"
+                    width="206"
+                  />
+                  <h3 class="ingredients-subtitle">Milk chocolate</h3>
+                </div>
+                <div class="ingredients-overlay">
+                  <h3 class="ing-ov-title">Milk chocolate</h3>
+                  <div class="ing-block">
+                    <p class="ing-type">chocolate</p>
+                    <p class="ing-benefit">the benefits</p>
+                  </div>
+                  <p class="ing-ov-text">
+                    Milk chocolate is a solid chocolate confectionery containing
+                    cocoa, sugar and milk. It is the most consumed type of
+                    chocolate. Chocolate was originally sold and consumed as a
+                    beverage in pre-Columbian times. Although four-fifths of all
+                    milk chocolate is sold in the United States and Europe.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="ingredients-item">
-              <div class="ingredient">
-                <img
-                  src="./images/ingredients/bottle-milk.png"
-                  alt="Bottle milk"
-                  width="206"
-                />
-                <h3 class="ingredients-subtitle">Milk</h3>
+              <div class="ingredients-card">
+                <div class="ingredient">
+                  <img
+                    class="ingredient-img"
+                    class="ingredient-img"
+                    src="./images/ingredients/bottle-milk.png"
+                    alt="Bottle milk"
+                    width="206"
+                  />
+                  <h3 class="ingredients-subtitle">Milk</h3>
+                </div>
+                <div class="ingredients-overlay">
+                  <h3 class="ing-ov-title">Milk</h3>
+                  <div class="ing-block">
+                    <p class="ing-type">milk</p>
+                    <p class="ing-benefit">the benefits</p>
+                  </div>
+                  <p class="ing-ov-text">
+                    Milk is a white liquid food produced by the mammary glands
+                    of mammals. It is the primary source of nutrition for young
+                    mammals (including breastfed human infants) before they are
+                    able to digest solid food.Early-lactation milk, which is
+                    called colostrum, contains antibodies that strengthen the
+                    immune system.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="ingredients-item">
-              <div class="ingredient">
-                <img
-                  src="./images/ingredients/nuts.png
+              <div class="ingredients-card">
+                <div class="ingredient">
+                  <img
+                    class="ingredient-img"
+                    src="./images/ingredients/nuts.png
               "
-                  alt="Nuts"
-                  width="206"
-                />
-                <h3 class="ingredients-subtitle">Nuts</h3>
+                    alt="Nuts"
+                    width="206"
+                  />
+                  <h3 class="ingredients-subtitle">Nuts</h3>
+                </div>
+                <div class="ingredients-overlay">
+                  <h3 class="ing-ov-title">Nuts</h3>
+                  <div class="ing-block">
+                    <p class="ing-type">nuts</p>
+                    <p class="ing-benefit">the benefits</p>
+                  </div>
+                  <p class="ing-ov-text">
+                    Almonds, pistachios, and walnuts are some types of nuts that
+                    contain healthy nutrients. When eaten as part of a
+                    nutrient-dense diet, these 9 nuts may offer benefits such as
+                    reducing your risk of heart disease. They’re a good source
+                    of fiber, healthy fats, and plant protein. Plus, they’re
+                    great on their own.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="ingredients-item">
-              <div class="ingredient">
-                <img
-                  src="./images/ingredients/chocolate-drops.png"
-                  alt="Chocolate drops"
-                  width="206"
-                />
-                <h3 class="ingredients-subtitle">Semi-sweet chocolate</h3>
+              <div class="ingredients-card">
+                <div class="ingredient">
+                  <img
+                    class="ingredient-img"
+                    src="./images/ingredients/chocolate-drops.png"
+                    alt="Chocolate drops"
+                    width="206"
+                  />
+                  <h3 class="ingredients-subtitle">Semi-sweet chocolate</h3>
+                </div>
+                <div class="ingredients-overlay">
+                  <h3 class="ing-ov-title">Semi-sweet chocolate</h3>
+                  <div class="ing-block">
+                    <p class="ing-type">sweet chocolate</p>
+                    <p class="ing-benefit">the benefits</p>
+                  </div>
+                  <p class="ing-ov-text">
+                    Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                    One of the best ways to gain an understanding of this type
+                    of chocolate is to compare it to a different type of
+                    chocolate. Semisweet is darker than milk chocolate. In a
+                    taste comparison, it has a slightly bitter taste whereas
+                    milk chocolate is sweeter and more mellow.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -204,7 +275,9 @@
                 width="600"
               />
               <button class="video-btn" type="button">
-                <img src="./images/icons/play.svg" alt="Play" />
+                <svg width="44">
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
               </button>
             </div>
             <div class="video-content">
@@ -244,48 +317,68 @@
           <h2 class="sections-title">
             Our <span class="title-accent"> products</span>
           </h2>
-          <ul>
-            <li>
-              <img
-                src="./images/products/orange.png"
-                alt="Orange dark chocolate"
-                width="230"
-              />
-              <h3>Orange</h3>
-              <p>Dark chocolate</p>
-              <span>45 UAH</span>
+          <ul class="products-list">
+            <li class="products-item">
+              <div class="products-card">
+                <img
+                  class="products-img"
+                  src="./images/products/orange.png"
+                  alt="Orange dark chocolate"
+                  width="230"
+                />
+                <div class="products-information">
+                  <h3 class="products-title">Orange</h3>
+                  <p class="products-subtitle">Dark chocolate</p>
+                  <span class="products-price">45 UAH</span>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/products/apple.png"
-                alt="Apple milk chocolate"
-                width="230"
-              />
-              <h3>Apple cranberry</h3>
-              <p>Milk chocolate</p>
+            <li class="products-item">
+              <div class="products-card">
+                <img
+                  class="products-img"
+                  src="./images/products/apple.png"
+                  alt="Apple milk chocolate"
+                  width="230"
+                />
+                <div class="products-information">
+                  <h3 class="products-title">Apple cranberry</h3>
+                  <p class="products-subtitle">Milk chocolate</p>
 
-              <span>50 uah</span>
+                  <span class="products-price">50 uah</span>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/products/lime.png"
-                alt="Lime dark chocolate"
-                width="230"
-              />
-              <h3>Lime sea salt</h3>
-              <p>Dark chocolate</p>
+            <li class="products-item">
+              <div class="products-card">
+                <img
+                  class="products-img"
+                  src="./images/products/lime.png"
+                  alt="Lime dark chocolate"
+                  width="230"
+                />
+                <div class="products-information">
+                  <h3 class="products-title">Lime sea salt</h3>
+                  <p class="products-subtitle">Dark chocolate</p>
 
-              <span>66 uah</span>
+                  <span class="products-price">66 uah</span>
+                </div>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/products/pineapple.png"
-                alt="pineapple dark chocolate"
-                width="230"
-              />
-              <h3>Pineapple</h3>
-              <p>Dark chocolate</p>
-              <span>54 uah</span>
+            <li class="products-item">
+              <div class="products-card">
+                <img
+                  class="products-img"
+                  src="./images/products/pineapple.png"
+                  alt="pineapple dark chocolate"
+                  width="230"
+                />
+                <div class="products-information">
+                  <h3 class="products-title">Pineapple</h3>
+                  <p class="products-subtitle">Dark chocolate</p>
+                  <span class="products-price">54 uah</span>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -297,22 +390,22 @@
           <h2 class="sections-title">
             <span class="title-accent"> Top</span> sellers
           </h2>
-          <ul>
-            <li>
+          <ul class="sellers-list">
+            <li class="sellers-item">
               <img
                 src="./images/top-sellers/seller-1.jpeg"
                 alt="Top seller 1"
                 width="368"
               />
             </li>
-            <li>
+            <li class="sellers-item">
               <img
                 src="./images/top-sellers/seller-2.jpeg"
                 alt="Top seller 2"
                 width="368"
               />
             </li>
-            <li>
+            <li class="sellers-item">
               <img
                 src="./images/top-sellers/seller-3.jpeg"
                 alt="Top seller 3"
@@ -320,12 +413,17 @@
               />
             </li>
           </ul>
-          <p>
-            Crazy enough chocolate originates from a bean just like the coffee
-            bean called Cacao. Cacao has been around for thousands of years and
-            was first discovered by the Native American tribe called the Mayans.
-          </p>
-          <button type="button" class="button-primary">Buy now</button>
+          <div class="sellers-inner">
+            <p class="sellers-title">
+              Crazy enough chocolate originates from a bean just like the coffee
+              bean called Cacao. Cacao has been around for thousands of years
+              and was first discovered by the Native American tribe called the
+              Mayans.
+            </p>
+            <div class="sellers-btn">
+              <button type="button" class="button-primary">Buy now</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -335,47 +433,56 @@
           <h2 class="sections-title">
             <span class="title-accent"> Chocolate </span> is loved
           </h2>
-          <ul>
-            <li>
-              <img
-                src="./images/reviews/Victoria.png"
-                alt="Victoria Dobrzhanska"
-                width="80"
-              />
-              <h3>Victoria Dobrzhanska</h3>
-              <p>
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <div class="reviews-comment">
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/Victoria.png"
+                  alt="Victoria Dobrzhanska"
+                  width="80"
+                />
+                <h3 class="review-name">Victoria Dobrzhanska</h3>
+                <p class="review-text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/reviews/Nazar.png"
-                alt="Nazar Babenko"
-                width="80"
-              />
-              <h3>Nazar Babenko</h3>
-              <p>
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
+            <li class="reviews-item">
+              <div class="reviews-comment">
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/Nazar.png"
+                  alt="Nazar Babenko"
+                  width="80"
+                />
+                <h3 class="review-name">Nazar Babenko</h3>
+                <p class="review-text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/reviews/Olena.png"
-                alt="Olena Kampusch"
-                width="80"
-              />
-              <h3>Olena Kampusch</h3>
-              <p>
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
+            <li class="reviews-item">
+              <div class="reviews-comment">
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/Olena.png"
+                  alt="Olena Kampusch"
+                  width="80"
+                />
+                <h3 class="review-name">Olena Kampusch</h3>
+                <p class="review-text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </div>
             </li>
           </ul>
-          <button type="button">Leave a review</button>
+          <button class="review-btn" type="button">Leave a review</button>
         </div>
       </section>
     </main>
