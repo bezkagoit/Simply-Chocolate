@@ -60,7 +60,9 @@
             </h1>
 
             <div class="hero-actions">
-              <button class="button-primary" type="button">Buy now</button>
+              <button class="button-primary" type="button" data-modal-open>
+                Buy now
+              </button>
               <a class="button-hero" href="#">How it’s made</a>
               <a class="hero-arrow" href="#benefits-section"
                 >scroll down
@@ -424,7 +426,7 @@
               Mayans.
             </p>
             <div class="sellers-btn">
-              <button type="button" class="button-primary">Buy now</button>
+              <button class="button-primary" type="button">Buy now</button>
             </div>
           </div>
         </div>
@@ -512,5 +514,154 @@
       </section>
     </main>
     <footer></footer>
+    <!-- Modal Buy now -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <span class="close-icon">
+            <svg width="28" height="28">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </span>
+        </button>
+
+        <h2 class="modal-title"><span class="title-accent"> Buy</span> now</h2>
+        <ul class="modal-list">
+          <li class="modal-item">
+            <div class="modal-card">
+              <img
+                class="modal-choco-img"
+                src="./images/modal/choco-bar-1.png"
+                alt="Chocolate bar 100 g"
+                width="120"
+              />
+              <div class="modal-prod-info">
+                <span class="products-weight">100 g</span>
+              </div>
+            </div>
+          </li>
+          <li class="modal-item">
+            <div class="modal-card">
+              <img
+                class="modal-choco-img"
+                src="./images/modal/choco-bar-2.png"
+                alt="Chocolate bar 200 g"
+                width="120"
+              />
+              <div class="modal-prod-info">
+                <span class="products-weight">200 g</span>
+              </div>
+            </div>
+          </li>
+          <li class="modal-item">
+            <div class="modal-card">
+              <img
+                class="modal-choco-img"
+                src="./images/modal/choco-bar-3.png"
+                alt="Chocolate bar 300 g"
+                width="120"
+              />
+              <div class="modal-prod-info">
+                <span class="products-weight">300 g</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form name="buy-form">
+          <fieldset>
+            <legend class="modal-label">Personal information</legend>
+            <div class="modal-row">
+              <div class="modal-field">
+                <label class="visually-hidden" for="user-name">Name</label>
+                <input
+                  class="modal-input"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="modal-field">
+                <label class="visually-hidden" for="user-surname">
+                  Surname</label
+                >
+                <input
+                  class="modal-input"
+                  id="user-surname"
+                  type="text"
+                  name="user-surname"
+                  placeholder="Surname"
+                />
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-email">Email</label>
+              <input
+                class="modal-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-phone">Phone number</label>
+              <div class="modal-input-wrap">
+                <div class="modal-input-group">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-Group"></use>
+                  </svg>
+                  <p class="modal-input-text">+380</p>
+                </div>
+                <input
+                  class="modal-input modal-input-phone"
+                  id="user-phone"
+                  type="tel"
+                  name="user-phone"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-card">Card number</label>
+              <div class="modal-input-wrap">
+                <svg class="modal-input-icon" width="44" height="30">
+                  <use href="./images/icons.svg#icon-Mastercard"></use>
+                </svg>
+                <input
+                  class="modal-input"
+                  id="user-card"
+                  type="tel"
+                  name="user-card"
+                  placeholder="Enter card"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="modal-field">
+              <legend class="visually-hidden">Additional information</legend>
+              <label class="modal-label" for="comment">Comment</label>
+              <textarea
+                class="modal-textarea"
+                name="comment"
+                id="comment"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <button class="modal-button button-primary" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
